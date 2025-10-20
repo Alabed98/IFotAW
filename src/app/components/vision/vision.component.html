@@ -1,0 +1,96 @@
+<div class="container-fluid vision">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center my-4">
+            <P class="fs-5 fw-bold">مهمتنا ورؤيتنا</P>
+
+            <P class="fs-5">أهدافنا وقيمنا ترشدنا نحو عالم أفضل ومترابط</P>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center pb-3 mx-3">
+        <div class="col-md-3 card py-3 px-3">
+            <div class="icon">
+                <i class="fa-solid fa-bullseye fa-xl py-4"></i>
+            </div>
+            <p class="fs-5">مهمتنا</p>
+            <p>يعزز الاتحاد الدولي للعالم العربي التبادل الثقافي والتعليم والتنمية المستدامة من خلال التعاون والحوار
+                الدولي</p>
+        </div>
+        <div class="col-md-3 card py-3 px-3 mx-3">
+            <div class="icon">
+                <i class="fa-solid fa-eye fa-xl py-4"></i>
+            </div>
+            <p class="fs-5">رؤيتنا</p>
+            <p>عالم يُقدَّر فيه التنوع الثقافي كقوة وحيث يؤدي التعاون بين الأمم إلى السلام والازدهار والتفاهم المتبادل
+            </p>
+        </div>
+        <div class="col-md-3 card py-3 px-3 ">
+            <div class="icon">
+                <i class="fa-solid fa-lightbulb fa-xl py-4"></i>
+            </div>
+            <p class="fs-5">قيمنا</p>
+            <p>النزاهة والاحترام والابتكار والالتزام بالعدالة الاجتماعية هي الركائز الأساسية لعملنا وتصرفاتنا</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mx-3 ">
+        <div class="col-md-9 card2 text-center py-3 mb-5">
+            <p class="fs-5 my-3 fw-bold">محاور تركيزنا</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-1"></i>
+                        </div>
+                    </div>
+                    <p class="text-center">التعليم والبحث</p>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-2"></i>
+                        </div>
+                    </div>
+                    <p>التبادل الثقافي</p>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-3"></i>
+                        </div>
+                    </div>
+                    <p>التنمية الاقتصادية</p>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-4"></i>
+
+                        </div>
+                    </div>
+                    <p>البرامج الاجتماعية</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center ">
+        <div class="col-md-6 col-sm-6 text-center mb-5 ">
+            <button type="button" class="btn btn-primary fs-5" (click)="overlay()"><span>
+                    اعرف المزيد عن أهداف الاتحاد
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+    <ng-template  cdkPortal>
+        <app-goals ></app-goals>
+    </ng-template>
+</div>

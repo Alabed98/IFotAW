@@ -1,0 +1,45 @@
+p{
+    background-color: white;
+    color: black;
+    font-size: 19px; 
+}
+
+.container-city{
+    overflow-y: auto !important;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 20px 0;
+    background-color: white; 
+    max-height: 80vh;
+    padding: 20px;
+}
+
+svg path{
+    cursor: pointer;
+}
+svg path:hover{
+    fill: #f0d785;
+}
+svg{
+    width: 100%; 
+    max-width:500px;
+}
+
+circle:hover{
+  fill: #ffcc00;
+}
+
+.info{
+    position: absolute;
+    background-color: #fbbc00;
+    color: white;
+    border-radius: 3px;
+    padding: 0;
+    color:black;
+}
+
+.info p {
+    margin: 0;
+    padding: 0 3px ;
+    padding-bottom: 2px;
+}

@@ -1,0 +1,73 @@
+.bg-img {
+  position: relative;
+  height: 100vh;
+  background: url('/images/bg-img1.jpg') center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0; 
+  background: linear-gradient(
+    278deg,
+    rgba(142, 104, 84, 0.8) 15%,
+    rgba(69, 75, 112, 0.8) 45%,
+    rgba(19, 74, 193, 0.8) 100%
+  );
+}
+
+
+.btn{
+   background-color: #e58525;
+   border-radius: 10px;
+   position: relative; 
+   color:white;
+   font-size:17px;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+.btn:hover::after{
+    background-color: #bb4d00;
+}
+
+.btn span{
+    position: relative;
+    z-index:1
+}
+
+.btn2{
+    position: relative;
+    background-color: #71718c;
+    border-radius: 10px;
+    border:1px solid #999eb7;
+    color:white;
+       font-size:17px;
+
+}
+.btn2::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn2:hover::after{
+    background-color: #7d84a3;
+}
+
+.btn2 span{
+    position: relative;
+    z-index:1
+}

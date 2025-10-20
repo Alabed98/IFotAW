@@ -1,0 +1,61 @@
+.contact{
+    background-color: #fafbfc;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #fff5cc;
+    border-radius: 50%;
+}
+.icon i{
+    margin-top: 50%;
+}
+
+.bg-blau{
+    background-color: #1c398e;
+}
+
+.bg-blau *{
+    color:#bedbff
+}
+
+ul{
+    text-align: left;
+}
+ul li{
+    display: inline-block;
+    padding: 0 10px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a:hover{
+    transition: color 0.5s ease;
+    color: #ffb900;
+}
+
+@media screen and (max-width:800px) {
+    ul li{
+        display: block;  
+    }    
+}
+
+@media screen and (max-width:773px) {
+    ul{
+        text-align: center;
+    }
+    ul li{
+        display: inline-block;
+    }    
+}
+
+@media screen and (max-width:768px) {
+    .copy{
+        text-align: center;
+    }
+    
+}

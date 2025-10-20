@@ -1,0 +1,70 @@
+.vision{
+    background-color: #1b3aa0;
+    color:white;
+    position: relative;
+}
+
+.card{
+    background-color: #314fb0;
+    border:#5b72bc 1px solid;
+    border-radius: 10px;
+    color:white;
+    margin: 10px 0;
+}
+
+.card2{
+    background-color: #2645ad;
+    border:#3c58bc 1px solid;
+    border-radius: 10px;
+    color:white;
+    margin: 10px 0;
+}
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e17100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #e4801a;
+    border:#ffffff 1px solid;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+}
+
+.btn:hover::after{
+    background-color: #bb4d00;
+}
+
+.btn span{
+    position: relative;
+    z-index:1
+}
+p{
+    color:#ffffff!important;
+}
+
+.goals{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}

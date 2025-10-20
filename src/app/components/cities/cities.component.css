@@ -1,0 +1,29 @@
+svg path{
+    cursor: pointer;
+}
+svg path:hover{
+    fill: #c25f1a;
+}
+svg{
+    width: 100%; 
+    max-width:500px;
+}
+
+circle:hover{
+  fill: #4661b8;
+}
+
+.info{
+    position: absolute;
+    background-color: white;
+    color: white;
+    border-radius: 3px;
+    padding: 0;
+    color:black;
+}
+
+.info p {
+    margin: 0;
+    padding: 0 3px ;
+    padding-bottom: 2px;
+}

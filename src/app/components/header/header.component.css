@@ -1,0 +1,39 @@
+.header{
+    box-sizing: border-box;
+    background-color: #f7f6f7;
+}
+
+.logo{
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+ul li a{
+    color:black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+ul li a:hover{
+    transition: color 0.5s ease;
+    color:#c25f1a;
+}
+
+ul li{
+    display: inline-block;
+    padding:0 0px;
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 562px) {
+    ul li {
+        margin-top: 10px;
+        text-align: center;
+        display: block;
+    }
+    h1 {
+        text-align: center;
+    }
+}
