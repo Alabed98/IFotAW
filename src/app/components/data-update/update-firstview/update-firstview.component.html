@@ -1,0 +1,40 @@
+<div class="container-fluid my-4 border-1 border rounded-2 bg-white p-3">
+
+    <div class="py-3">
+        <div class="row">
+            <div class="col-md-12 ">
+                <p class="text-dark fs-5">تحرير القسم الرئيسي</p>
+                <p>قم بتحديث محتوى القسم الرئيسي للموقع</p>
+            </div>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="save()">
+
+            <mat-form-field>
+                <mat-label>
+                    العنوان الرئيسي
+                </mat-label>
+                <textarea matInput formControlName="headline">
+                    
+                </textarea>
+
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>
+                     النص الفرعي
+                </mat-label>
+                <textarea matInput formControlName="description"></textarea>
+
+            </mat-form-field>
+
+
+
+            <button type="submit" class="btn mt-3"><span>
+                 حفظ التغييرات
+                </span>
+            </button>
+        </form>
+
+    </div>
+
+</div>
