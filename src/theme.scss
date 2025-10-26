@@ -1,0 +1,9 @@
+@use '@angular/material' as mat;
+
+:root {
+  @include mat.tabs-overrides((
+    active-focus-indicator-color: orange,
+    active-focus-label-text-color: red,
+    active-focus-indicator-color:red,
+  ));
+}

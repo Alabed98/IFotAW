@@ -1,13 +1,16 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-import { NewsComponent } from './components/news/news.component';
-import { CitiesComponent } from './components/cities/cities.component';
 import { StatusCode404Component } from './components/status-code-404/status-code-404.component';
+import { WebsiteComponent } from './components/website/website.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { DataUpdateComponent } from './components/data-update/data-update.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
-    {path:'header',component:HeaderComponent},
-    {path:'news', component:NewsComponent},
-    {path:'cities', component:CitiesComponent},
+    {path:'',component:WebsiteComponent},
+    {path:'login', component:LoginComponent},
+    {path:'registeration', component:RegisterComponent},
+    {path:'admin', component:DataUpdateComponent, canActivate:[AuthGuard]},
     {path:'**', component:StatusCode404Component},
 
 ];

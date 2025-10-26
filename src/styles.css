@@ -45,3 +45,20 @@ background: linear-gradient(94deg, rgba(239, 222, 159, 1) 0%, rgba(206, 156, 32,
 p{
   color:#4a5565
 }
+
+:root{
+  .mat-mdc-tab-body-content{
+    background-color: #fafbfc!important;
+  }
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+  .mat-mdc-text-field-wrapper{
+    background-color: #f3f3f5 !important;
+    border-radius: 5px !important;
+  }
+  .mat-mdc-form-field-hint-wrapper{
+    border-bottom: none !important;
+
+  }
+}

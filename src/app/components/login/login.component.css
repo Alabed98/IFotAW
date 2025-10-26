@@ -1,0 +1,27 @@
+.login{
+    height: 100vh;
+}
+
+.body{
+    background-color: #324eaa;
+    
+}
+
+form{
+    background-color: #4661b8;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+
+.btn{
+    background-color: #d17227;
+    color:white
+}
+
+.btn:hover{
+    transition:background-color 0.5s ease ;
+    background-color: #c25f1a;
+    color:white
+
+}

@@ -22,7 +22,13 @@
               <a href="#cities"   >المحافظات السورية
             </a>
             </li>
+               <li>
+              <a [href]="loggedIn? 'admin' : 'login'" >
+                تسجيل الدخول 
 
+            </a>
+            </li>
+            <li><a [routerLink]="'login'"></a></li>
           </ul>
         </div>
       </div>

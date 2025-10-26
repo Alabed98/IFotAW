@@ -1,0 +1,63 @@
+<div class="container-fluid body" dir="ltr" >
+  <div class="container">
+
+    <div class="row justify-content-center align-items-center">    
+
+      <div class="col-md-12 login d-flex justify-content-center align-items-center">
+        <div>                          
+          
+          <h3 class="text-center text-white my-5"> الاتحاد الدولي للعالم العربي </h3>
+          <h4 class="text-center text-white my-5">إدارة محتوى الموقع</h4>
+          <form [formGroup]="form" (ngSubmit)="submit()" class="py-5">
+           
+              <mat-form-field>
+                <div class="row">
+                  <div class="col-md-2 col-2">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="col-md-10 col-10">
+                    <input type="text" matInput placeholder="E-Mail" formControlName="email">
+                
+                  </div>   
+                </div>
+                 <div *ngIf="email?.invalid && email?.touched">
+                    <small class="text-danger" *ngIf="email?.errors?.['email']">Ungültige E-Mail-Adresse</small>
+                </div>
+              </mat-form-field>
+              
+            <p>
+              <mat-form-field>
+                <div class="row">
+                  <div class="col-md-2 col-2" (click)="showPassword()">
+                    <i [ngClass]="[ 'fa-solid', passwordReadable ? 'fa-eye-slash' : 'fa-eye']"></i>
+                  </div>
+                  <div class="col-md-10 col-10">
+                    <input [type]="passwordReadable? 'text':'password'" matInput placeholder="Password" formControlName="password">
+                  </div>
+                </div>
+
+                <div *ngIf="password?.invalid && password?.touched">
+                  <small class="text-danger " *ngIf="password?.errors?.['minlength']">Mindestens 8 Zeichen</small>
+                  <small class="text-danger " *ngIf="password?.errors?.['required']">Password ist erforderlich</small>
+
+                </div>
+              </mat-form-field>
+            </p>
+
+            <div class="button">
+              <button type="submit" mat-button class="btn">Login</button>
+            </div>
+
+            <a routerLink="/registeration">Regestrieren</a>
+
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
