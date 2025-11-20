@@ -6,3 +6,31 @@
     overflow: auto;
     color:black; 
 }
+
+.icon{
+    background-color: #c25f1a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.goalsItems p{
+    margin: 15px;
+    padding:10px;
+    background-color: #fafafa;
+    border: 1px solid #e6e5e5;
+    border-radius: 15px;
+    font-size: 17px;
+    position: relative;
+    list-style-image: url('/images/check.jpg');
+}
+
+.goalsItems p::after{
+    content: '';
+    position: absolute;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.goalsItems p:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}   

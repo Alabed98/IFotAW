@@ -13,9 +13,9 @@ body{
 }
 
 .bg-warning{
-background: #EFDE9F;
-background: linear-gradient(94deg, rgba(239, 222, 159, 1) 0%, rgba(206, 156, 32, 1) 44%, rgba(177, 117, 20, 1) 100%);
-
+background: rgb(50, 78, 170);
+background: linear-gradient(94deg, rgb(158, 177, 241) 0%, rgb(87, 106, 168) 44%, rgb(50, 78, 170) 100%);
+color:white
 }
 
 .shadow-1 {
@@ -43,7 +43,8 @@ background: linear-gradient(94deg, rgba(239, 222, 159, 1) 0%, rgba(206, 156, 32,
 }
 
 p{
-  color:#4a5565
+  color:#4a5565;
+  font-family: 'Cairo', sans-serif;
 }
 
 :root{

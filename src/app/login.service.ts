@@ -13,7 +13,7 @@ export class LoginService {
     this.loggedIn.next(isLoggedIn);
   }
   currentUser: BehaviorSubject<any|null> = new BehaviorSubject(null);
-  private apiUrl = 'https://dbifotaw.onrender.com';
+  private apiUrl = 'http://127.0.0.1:8000';
 
 
   login(email:string, password:string){

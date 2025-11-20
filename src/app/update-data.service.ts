@@ -8,7 +8,7 @@ import { AboutUs } from './interfaces/aboutUs';
 export class UpdateDataService {
 
   constructor(private http:HttpClient) { }
-  private url = "https://dbifotaw.onrender.com";
+  private url = "http://127.0.0.1:8000";
   xsrf = this.getCookie('XSRF-TOKEN');
   updateFirstView(data:FirstView){
     return this.http.post(`${this.url}/updateFirstView`, { headline:data.headline ,description:data.description }, { withCredentials: true, headers: new    HttpHeaders({'X-XSRF-TOKEN': decodeURIComponent(this.xsrf || '')}), responseType: 'json'} ) 
